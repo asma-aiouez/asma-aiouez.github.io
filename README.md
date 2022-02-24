@@ -1,1 +1,1 @@
-url : asma-aiouez.github.io
+url : asma-aiouez.github.io/cs472-assignments/
