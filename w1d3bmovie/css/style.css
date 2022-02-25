@@ -49,16 +49,28 @@ section{
 }
 .right{
     width: 30%;
+    background-color: #A2B964;
 }
 .review{
     margin: 10px;
     flex: 40%;
 }
-.review .text{
-    border-radius: 20px;
+.review .quote{
+    border-radius: 10px;
     border-style: solid;
-    padding: 5px;
+    padding: 8px;
+    background-color: #E8DC9B;
+    border-color: gray;
+    border-width: 2px;
 }
 .review .user{
     display: flex;
+}
+.icon {
+    margin-right: 5px;
+}
+.right img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
 }
