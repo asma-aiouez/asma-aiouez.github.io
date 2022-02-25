@@ -1,0 +1,64 @@
+
+body{
+    background-image: url("../images/background.png");
+    margin: 0;
+    padding: 0;
+}
+#bannerbg{
+    background-image: url("../images/bannerbg.png");
+}
+#banner{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1{
+    text-align: center;
+    font-size: 24pt;
+    font-weight: bold;
+    font-family: Tahoma, Verdana, sans-serif;
+    text-shadow: 3px 3px #999999;
+}
+section{
+    position: absolute;
+    left: 20%;
+    right: 20%;
+}
+header{
+    background-image: url("../images/rottenbig.png");
+}
+section{
+    display: flex;
+}
+.parent{
+    display: flex;
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    border-style: solid;
+}
+.left{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.parent.left:not(:first-child){
+   
+
+}
+.right{
+    width: 30%;
+}
+.review{
+    margin: 10px;
+    flex: 40%;
+}
+.review .text{
+    border-radius: 20px;
+    border-style: solid;
+    padding: 5px;
+}
+.review .user{
+    display: flex;
+}
