@@ -24,32 +24,50 @@ section{
     left: 20%;
     right: 20%;
 }
-header{
-    background-image: url("../images/rottenbig.png");
+.header{
+    background-image: url("../images/rbg.png");
+    display: block;
+    background-size: contain;
+    height: 83px;
+    border-top-left-radius: 13px;
+}
+.header > img {
+    border-top-left-radius: 16px;
+}
+#rating{
+    font-size:  48pt;
+    color: red;
+    font-weight: bold;
+    vertical-align: top;
 }
 section{
     display: flex;
 }
 .parent{
-    display: flex;
     position: absolute;
-    left: 20%;
-    right: 20%;
+    left: 17%;
+    right: 17%;
     border-style: solid;
+    border: 4px solid gray;
+    border-radius: 20px;
 }
 .left{
     width: 70%;
-    display: flex;
-    flex-wrap: wrap;
+    border-top-left-radius: 13px;
 }
 
-.parent.left:not(:first-child){
-   
-
+.reviews{
+    display: flex;
+    flex-wrap: wrap;
 }
 .right{
     width: 30%;
     background-color: #A2B964;
+    border-top-right-radius: 13px;
+}
+.right > img {
+    width: 100%;
+    border-top-right-radius: 13px;
 }
 .review{
     margin: 10px;
@@ -62,6 +80,7 @@ section{
     background-color: #E8DC9B;
     border-color: gray;
     border-width: 2px;
+    font-weight: bold;
 }
 .review .user{
     display: flex;
@@ -73,4 +92,35 @@ section{
     max-width: 100%;
     max-height: 100%;
     display: block;
+}
+dl{
+    margin: 15px;
+}
+dt{
+    margin-top: 10px;
+    font-weight: bold;
+}
+.pagination{
+    background-color: #A2B964;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+.pagination p{
+    margin: 0;
+}
+.validators{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    opacity: 0.5;
+}
+.user p {
+    margin: 0px;
+}
+.info p:nth-child(even){
+    font-style: italic;
 }
