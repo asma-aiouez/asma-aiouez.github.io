@@ -17,28 +17,29 @@
         }
 
     </style>
+    <script defer src="./js/app1.js"></script>
 </head>
 <body>
   <div class="container">
     <form>
       <div class="form-group">
         <label for="exampleInputEmail1">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
       </div>
       <div class="form-group">
         <label for="exampleInputPassword1">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" minlength="10" pattern="(?=.{4,})(?=.*[a-z])(?=.*[A-Z])(?=.*\d).*" title="Passowrd needs to have at least one lowercase letter, one uppercase letter and a digit.">
+        <input type="password" class="form-control" id="password" placeholder="Password" minlength="10" pattern="(?=.{4,})(?=.*[a-z])(?=.*[A-Z])(?=.*\d).*" title="Passowrd needs to have at least one lowercase letter, one uppercase letter and a digit.">
       </div>
       <div class="form-group">
         <label for="exampleInputUrl">Web Site</label>
-        <input type="url" class="form-control" id="exampleInputUrl" placeholder="url" pattern="https?://.+" title="URL must start with https:// or http://">
+        <input type="url" class="form-control" id="url" placeholder="url" pattern="https?://.+" title="URL must start with https:// or http://">
       </div>
       <div class="form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <input type="checkbox" class="form-check-input" id="check">
         <label class="form-check-label" for="exampleCheck1">Check me out</label>
       </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="submit" class="btn btn-primary" id="btnSubmit">Submit</button>
     </form>
   </div>
     
