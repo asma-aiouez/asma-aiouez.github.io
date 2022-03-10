@@ -53,7 +53,6 @@ employee.doJob = function(title){
 let anna = Object.create(employee)
 
 anna.name = "Anna"
-console.log(employee)
 anna.setSalary(249995.50)
 anna.doJob("Programmer");
 
